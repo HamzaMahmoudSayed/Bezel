@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    background-color: rgb(31, 32, 33);
+    border-bottom: 1px solid rgb(76, 77, 77);
+    padding-block: 15px;
+}
+
+
+
+.navbar .container a .logo,
+.logo2 {
+    width: 95px;
+}
+
+.navbar .container a .logo2 {
+    display: none;
+}
+
+.navbar .container .collapse ul li a {
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-right: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar .container ul {
+    position: relative;
+    right: 110px;
+}
+
+.navbar .container .collapse div {
+    height: 80px;
+    background-color: rgb(76, 77, 77);
+    width: 0.5px;
+    position: absolute;
+    top: 0;
+    right: 180px;
+}
+
+.navbar .container .collapse .icons a i {
+    position: relative;
+    top: 32%;
+    translate: -32%;
+    padding-left: 26px;
+    transition: all 0.2s ease;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width:992px) {
+    .navbar .container .collapse .icons a i {
+        opacity: 0;
+    }
+
+    .navbar {
+        background-color: white;
+    }
+
+    .navbar .container .collapse ul {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .navbar .container .collapse ul li a {
+        color: black !important;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .container .collapse ul li a:hover {
+        color: RGB(120, 120, 120) !important;
+    }
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .navbar .container a .logo {
+        display: none;
+    }
+
+    .navbar .container a .logo2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .navbar .container .collapse div {
+        opacity: 0;
+    }
+}
+
+
+.navbar .container .collapse .icons i:hover {
+    color: rgb(204, 204, 204);
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+
+header {
+    background-image: linear-gradient(rgba(31, 31, 31, 0.55), rgba(31, 31, 31, 0.55)), url(../images/bg-image-29.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .caption {
+    color: white;
+    text-align: center;
+}
+
+header .caption h1 {
+    font-size: 100px;
+    letter-spacing: -3px;
+    font-weight: 700;
+}
+
+header .caption h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header .caption .buttons .hire-us {
+    color: white;
+    background-color: #00c3da;
+    border: 1px solid #00c3da;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 4px;
+    letter-spacing: -0.04em
+}
+
+header .caption .buttons {
+    margin-top: 30px;
+}
+
+header .caption .buttons .hire-us:hover {
+    background-color: #00d5ee;
+    border: 1px solid #00d5ee;
+    transform: translateY(-1px);
+}
+
+header .caption .buttons .services {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 4px;
+    letter-spacing: -0.04em;
+    margin-left: 15px;
+}
+
+header .caption .buttons .services:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #1f1f1f;
+}
+
+#about .container .content h6 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+}
+
+#about .container .content p {
+    font-size: 20px;
+    color: RGB(120, 120, 120);
+    line-height: 30px;
+}
+
+#about .container .content p span::after {
+    content: "";
+    animation-name: text;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text {
+    0% {
+        content: "|";
+
+    }
+
+    2.38% {
+        content: "a|";
+    }
+
+    4.76% {
+        content: "ap|";
+    }
+
+    7.14% {
+        content: "app|";
+    }
+
+    9.52% {
+        content: "apps|";
+    }
+
+    11.9% {
+        content: "app|";
+    }
+
+    14.28% {
+        content: "ap|";
+    }
+
+    16.66% {
+        content: "a|";
+    }
+
+    19.04% {
+        content: "|";
+    }
+
+    21.42% {
+        content: "w|";
+    }
+
+    23.8% {
+        content: "we|";
+    }
+
+    26.18% {
+        content: "web|";
+    }
+
+    28.56% {
+        content: "webs|";
+    }
+
+    30.94% {
+        content: "websi|";
+    }
+
+    33.32% {
+        content: "websit|";
+    }
+
+    35.7% {
+        content: "website|";
+    }
+
+    38.08% {
+        content: "websites|";
+    }
+
+    40.46% {
+        content: "website|";
+    }
+
+    42.84% {
+        content: "websit|";
+    }
+
+    45.22% {
+        content: "websi|";
+    }
+
+    47.6% {
+        content: "webs|";
+    }
+
+    49.98% {
+        content: "web|";
+    }
+
+    52.36% {
+        content: "we|";
+    }
+
+    54.74% {
+        content: "w|";
+    }
+
+    57.12% {
+        content: "|";
+    }
+
+    59.5% {
+        content: "s|";
+    }
+
+    61.88% {
+        content: "so|";
+    }
+
+    64.26% {
+        content: "sof|";
+    }
+
+    66.64% {
+        content: "soft|";
+    }
+
+    69.08% {
+        content: "softw|";
+    }
+
+    71.4% {
+        content: "softwa|";
+    }
+
+    73.78% {
+        content: "softwar|";
+    }
+
+    76.16% {
+        content: "software|";
+    }
+
+    78.54% {
+        content: "softwares|";
+    }
+
+    80.92% {
+        content: "software|";
+    }
+
+    83.3% {
+        content: "softwar|";
+    }
+
+    85.68% {
+        content: "softwa|";
+    }
+
+    88.06% {
+        content: "softw|";
+    }
+
+    90.44% {
+        content: "soft|";
+    }
+
+    92.82% {
+        content: "sof|";
+    }
+
+    95.2% {
+        content: "so|";
+    }
+
+    97.58% {
+        content: "s|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+/*softwares*/
+
+#about .container .content button {
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    padding: 0 30px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+#about .container .content button:hover {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+    color: #fff;
+}
+
+#team {
+    border-top: 1px solid #eee;
+}
+
+#team .container .row .content .team-image {
+    overflow: hidden;
+    position: relative;
+}
+
+#team .container .row .content .team-image .caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+    bottom: 0;
+    transform: scale(1);
+    left: 0;
+    background-color: rgba(0, 195, 218, 0.9);
+    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+}
+
+#team .container .special-title {
+    text-align: center;
+}
+
+#team .container .special-title h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+#team .container .special-title h2::before {
+    content: "C";
+    position: absolute;
+    opacity: .06;
+    top: -35px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#team .container .special-title h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: RGB(120, 120, 120);
+}
+
+#team .container .row .content .team-image:hover .caption {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+#team .container .row .content .team-image .caption a i {
+    color: #fff;
+}
+
+#team .container .row .content .team-image .caption .info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+}
+
+#team .container .row .content .team-image .caption .info h4 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#team .container .row .content .team-image .caption .info span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#services {
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
+
+#services .container .row h4 {
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#services .container .special-title h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    position: relative;
+}
+
+#services .container .special-title h2::before {
+    content: "W";
+    font-size: 2em;
+    opacity: .06;
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#services .container p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+#services .container ul li {
+    padding: 7px 0;
+}
+
+#pricing {
+    background-color: rgb(247, 247, 247);
+}
+
+#pricing .container .my-card {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    transition: all .3s ease;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#pricing .container .special {
+    position: relative;
+    bottom: 15px;
+    height: 445px;
+}
+
+#pricing .container .my-card:hover {
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .container .my-card h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#pricing .container .my-card .best-value {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: #00c3da;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#pricing .container .my-card .special-price {
+    color: #00c3da;
+}
+
+#pricing .container .my-card h2 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+
+#pricing .container .my-card h2 span {
+    font-size: 18px;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+#pricing .container .my-card ul {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#pricing .container .my-card ul li {
+    margin-bottom: 15px;
+}
+
+#pricing .container .my-card ul li span {
+    font-size: 16px;
+    color: RGB(120, 120, 120);
+    font-weight: 400;
+}
+
+#pricing .container .my-card button {
+    padding: 0 16px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #00c3da;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #00c3da;
+    font-weight: 600;
+}
+
+#pricing .container .my-card button:hover {
+    background-color: #00d5ee;
+    color: #fff;
+    transform: translateY(-1px)
+}
+
+#pricing .container .special-title {
+    text-align: center;
+    margin-block: 70px;
+}
+
+#pricing .container .special-title h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+#pricing .container .special-title h2::before {
+    content: "C";
+    position: absolute;
+    opacity: .06;
+    top: -35px;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#pricing .container .special-title h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: RGB(120, 120, 120);
+}
+
+#testimonials {
+    background-color: rgb(247, 247, 247);
+}
+
+#testimonials .content {
+    background-color: white;
+    width: 60%;
+    padding-bottom: 40px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+#testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45px;
+    position: relative;
+    z-index: 2;
+}
+
+#testimonials .content h4 {
+    text-align: center;
+    margin-block: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#testimonials .content .job {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: RGB(120, 120, 120);
+}
+
+#testimonials .content p {
+    text-align: center;
+    line-height: 27px;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 300;
+    color: RGB(120, 120, 120);
+}
+
+
+#contact .container .special-title {
+    margin-block: 70px;
+}
+
+#contact .container .special-title h2 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    position: relative;
+}
+
+#contact form .form-control:focus {
+    border-color: #1f1f1f;
+    box-shadow: none;
+}
+
+#contact form button {
+    color: #fff;
+    background-color: #00c3da;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    border: 1px solid #00c3da;
+
+    margin-top: 20px;
+}
+
+#contact form button:hover {
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+    border: 1px solid #00d5ee;
+}
+
+#contact .container .special-title h2::before {
+    content: "G";
+    position: absolute;
+    opacity: .06;
+    top: -35px;
+    left: -10px;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact .container .special-title h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: RGB(120, 120, 120);
+}
+
+footer {
+    background-color: rgb(31, 32, 33);
+    margin-top: 200px;
+}
+
+footer p span {
+    color: #00c3da;
+    font-weight: bolder;
+}
+
+footer ul i {
+    transition: all 0.5s;
+}
+
+footer ul i:hover {
+    color: #00c3da !important;
+}
